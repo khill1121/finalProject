@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title> Workout Final Project </title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+  <h1> Somatotypes: Using Yours to Your Advantage</h1>
+</div>
+
+<div id="bmiHeader">
+  <h2>Body Mass Index</h2>
+</div>
+
+<div id="bmiText">
+    <p> Before learning about somatotypes and the workout and diet plan for your specific somatotype it is important to have an understanding about the health of your body.
+    One general indication about health as it relates to weight, diet, and workouts is body mass index. </p>
+    <p> BMI is an indicator for high body fatness but should not be used as a diagnotic for fat levels or health of an individual.</p>
+    <p> You can use this BMI calculator by entering your weight (in pounds) and height (in inches) below.
+      This will indicate whether weight loss should be of importance due to weight categories that can lead to other health problems.</p>
+</div>
+
+<div id="bmiCalculator">
+  <h3>BMI Calculator</h3>
+  <form name="bmiForm"><br>
+  Your Weight (lbs): <br><input type="text" name="weight" size="10" id='w'><br><br>
+  Your Height (in): <br><input type="text" name="height" size="10" id='h'><br><br>
+  <input type="button" value="Calculate BMI" onClick="calculateBmi()" id='btn'/>  <input type="reset" value="Reset" id='btn2'/><br><br>
+  Your BMI is ...<br><input type="text" name="bmi" size="10" id='result'><br><br>
+  This Means that ...<br><input type="text" name="meaning" size="25" id='result2'><br><br>
+</form>
+<p>BMI calculator code adapted and altered from <a href="https://www.youtube.com/watch?v=RtbfbldmgSo">Web Code on YouTube.</a></p>
+</div>
+
+<p>If your BMI placed your weight in any categories other than a normal weight range, continue reading to learn about how to control your health based on somatotypes.<p>
+
+
+<div id="somatotype_text">
+  <h2>Somatotypes</h2>
+  <p>Somatotypes are categories that individuals can be assigned to based on the physique of their body. In other words somatotypes are body types that cannot change even with diet and workout. There are three somatotypes.</p>
+  <ol>
+    <li>Ectomorph</li>
+    <li>Mesomorph</li>
+    <li>Endomorph</li>
+  </ol>
+  <p>An ectomorph is a person with a light build. Generally, ectomorphs have long thin limbs and lean muscle. Shoulders tend to be narrow in this somatotype. Examples include Taylor Swift, Bradley Cooper, Kate Moss, and Mathew McConaughey.</p>
+  <p>A mesomorph is a person with a medium build. They usually develop muscles eaily and have more muscles than fat. Bodies of this build may be described as triangular. Examples include Chris Hemsworth, Janet Jackson, Cristiano Ronaldo, and Madonna.</p>
+  <p>An endomorph is a person with a large "curvy" build. Endomorphs usually have a high body fat percentage and lots of muscle. People of this somatotype gain weight easily, but don't necessarily have to be overweight. Examples include Marilyn Monroe, Chris Pratt, and Kim Kardashian.</p>
+  <p>Choose an image below that represents your somatotype to reveal a workout and diet plan for that somatotype. The plan will be displayed directly under the three images.</p>
+</div>
+
+
+<div id="somatotypes">
+  <img id="ectomorph" src="images/ectomorph.jpg" class="type" alt="Graphic of Ectomorph Somatotype">
+  <img id="mesomorph" src="images/mesomorph.jpg" class="type" alt="Graphic of Mesomorph Somatotype">
+  <img id="endomorph" src="images/endomorph.jpg" class="type" alt="Graphic of Mesomorph Somatotype">
+  <p>Image Source:<a href="https://shared-assets.adobe.com/link/eaed0f77-5721-4d37-472c-bc4048f83b08"> Adobe Stock Images.</a></p>
+  <p>Image License:<a href="https://stock.adobe.com/license-terms#standardLicenses"> Adobe Standard License.</a></p>
+</div>
+
+<div id="somatotype">
+  <div id="ectomorph_stuff" class="somatotype_info">
+    <h2>Ectomorph Diet and Workout Plan</h2>
+    <h3>Diet</h3>
+    <p>Ectomorphs should adapt a diet that consists of:</p>
+    <ul>
+      <li>25% Proteins</li>
+      <li>20% Fats</li>
+      <li>55% Carbohydrates</li>
+    </ul>
+    <h3>Workouts</h3>
+    <p>Often ectomorphs are looking to build muscle mass and overall achieve a larger stature. This can be done through weight training and example workout plan for ectomorphs looking to build body mass is below.</p>
+    <ul>
+      <li>Bench Press (3 Sets of 5)</li>
+      <li>Front Squat (5 Sets of 7)</li>
+      <li>Deadlift (3 Sets of 7)</li>
+      <li>Pull-Ups (5 Sets of 20)</li>
+      <li>DB Seated Shoulder Press (5 Sets of 8)</li>
+      <li>Plank (Until Failure)</li>
+    </ul>
+</div>
+
+<div id="mesomorph_stuff" class="somatotype_info">
+  <h2>Mesomorph Diet and Workout Plan</h2>
+  <h3>Diet</h3>
+  <p>Mesomorphs should adapt a diet that consists of:</p>
+  <ul>
+    <li>30% Proteins</li>
+    <li>30% Fats</li>
+    <li>40% Carbohydrates</li>
+  </ul>
+  <h3>Workouts</h3>
+  <p>The mesomorphs workout will vary based on their goals. If the goal is to lose body fat a focus should be placed more on cardio than on weights. These cardio sessions should be 15 to 40 minutes and done anywhere from three to five times a week.</p>
+  <p>Overall mesomorphs respond best to High Intensity Interval Training or HIIT. An example HIIT workout for a mesomorph is listed below.</p>
+  <ul>
+    <li>Jump Squat (30 sec.)</li>
+    <li>Plank (30 sec.)</li>
+    <li>Rock Climbers (30 sec.)</li>
+    <li>REST (10 sec.)</li>
+    <li>Jump Lunges (30 sec.)</li>
+    <li>Flutter Kick Squats (30 sec.)</li>
+    <li>Mason Twists (30 sec.)</li>
+    <li>REST (10 sec.)</li>
+    <li>Military Push-Up (30 sec.)</li>
+    <li>Burpees (30 sec.)</li>
+    <li>Fifer Scissors (30 sec.)</li>
+  </ul>
+</div>
+
+<div id="endomorph_stuff" class="somatotype_info">
+  <h2>Endomorph Diet and Workout Plan</h2>
+  <h3>Diet</h3>
+  <p>Because endomorphs have higher levels of body fat they naturally burn less calories than someone who is more muscular in composition.
+  Their diet is more restrictive on calories to account for this.</p>
+  <p>Endomorphs should adapt a diet that consists of:</p>
+  <ul>
+    <li>35% Proteins</li>
+    <li>40% Fats</li>
+    <li>25% Carbohydrates</li>
+  </ul>
+  <h3>Workouts</h3>
+  <p>Endomorphs tend to have slower metabolisms so these workouts should be used in order to improve metabolic efficiency.
+    This means that workouts for endomorphs should be high intensity</p>
+  <p>The key to staying in shape as an endomorph is a high frequency of workouts.</p>
+  <p>An average week of workouts for an endomorph should include:</p>
+  <ul>
+    <li>2 Cardio Days</li>
+    <li>3 Weight Days</li>
+    <li>2 Rest Days</li>
+  </ul>
+  <p>An example cardio workout would be 35 minutes of running or jumping rope. A low impact alternative would be hiking. Finally, for a no impact alternative, swimming is a good option.</p>
+  <p>Weight days should aim to focus on different parts of the body each day in order to remain safe in workouts. As a general rule, when looking to lose fat use low weight and high repetitions and when looking to gain muscle do the opposite.</p>
+  <p>It is important to remember to include some type of activity even on rest days. Long walks or time spent outdoors is a great way to stay active even without a workout.</p>
+
+</div>
+
+<div id=footer>
+  <h4>This page explaining somatotypes and body mass index was created by Kierra Hill. This page is a representation of my learning in Web Apps for Communicators.</h4>
+</div>
+
+</div>
+</div>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
